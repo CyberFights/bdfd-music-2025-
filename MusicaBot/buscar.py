@@ -1,8 +1,11 @@
-from youtubesearchpython import VideosSearch
+from youtube_search import YoutubeSearch
 import json
 
 def search_youtube(text: str):
-    videos_search = VideosSearch(text, limit=1)  # Limitamos la búsqueda a 1 video
-    results = obj=videos_search.result()["result"][0]["link"]
-    return results
+    results = YoutubeSearch(text, max_results=1).to_json()
+    data = json.loads(results)  # Convertir la cadena JSON en un diccionario
+    if data["videos"]:
+        video_id = data["videos"][0]["id"]
+        return f"https://www.youtube.com/watch?v={video_id}"
+    return "No se encontraron resultados"
 
