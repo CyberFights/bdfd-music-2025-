@@ -26,5 +26,8 @@ En caso de errores de cookies, edita el archivo de [cookies.txt](https://github.
 
 **BOT DE DISCORD**
 
+Ayuda especial en el [Servidor de Soporte](https://discord.gg/aP27xXeAsS)
 
 **BDFD**
+
+Ayuda especial en el [Servidor de Soporte](https://discord.gg/aP27xXeAsS)
