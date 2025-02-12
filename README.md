@@ -9,4 +9,21 @@ En cualquier diploy render, vercelapp o cualquiera establece las variable de ent
 
 ## ERRORES
 
-En caso de errores de coskies, edit el archivo de [cookies.txt](https://github.com/IzanaonYT/bdfd-music-2025-/blob/main/cookies.txt), y seguir el siguien tutorial
+**COOKIES**
+En caso de errores de cookies, edit el archivo de [cookies.txt](https://github.com/IzanaonYT/bdfd-music-2025-/blob/main/cookies.txt), y seguir el siguiente tutorial.
+
+- Agrega la extensión Get cookies.txt LOCALMENTE
+- Haz clic derecho en el ícono de la extensión y haz clic en "Administrar extensión"
+- Habilita "Permitir en modo incógnito"
+- Abre una ventana de incógnito
+- Ve a https://youtube.com/
+- Inicia sesión
+- Cuando estés nuevamente en la página principal de YouTube, luego de iniciar sesión
+- Haz clic en "Exportar todas las cookies"
+- Copia el contenido del archivo y pegalo en archivo de cookies en el repositorio
+
+
+**BOT DE DISCORD**
+
+
+**BDFD**
