@@ -1,11 +1,20 @@
-from youtube_search import YoutubeSearch
-import json
+import yt_dlp
 
 def search_youtube(text: str):
-    results = YoutubeSearch(text, max_results=1).to_json()
-    data = json.loads(results)  # Convertir la cadena JSON en un diccionario
-    if data["videos"]:
-        video_id = data["videos"][0]["id"]
-        return f"https://www.youtube.com/watch?v={video_id}"
+    ydl_opts = {
+        'quiet': True,
+        'default_search': 'ytsearch',
+        'max_downloads': 1,
+        'extract_flat': True,  # No descargar, solo obtener información
+        'cookiefile': 'cookies.txt'  # Usa el archivo de cookies directamente
+    }
+
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(text, download=False)
+        if "entries" in info and info["entries"]:
+            return info["entries"][0]["url"]  # URL directa del video
     return "No se encontraron resultados"
+
+print(search_youtube("zoe -azul"))
+
 
