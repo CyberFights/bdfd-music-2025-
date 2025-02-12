@@ -5,5 +5,5 @@ yt-dlp
 aiohttp
 pydantic
 fastapi
-youtube-search-python
+youtube-search
 uvicorn
