@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 from MusicaBot.buscar import search_youtube
 from MusicaBot.audio import get_youtube_audio_url
-from youtubesearchpython import VideosSearch
+
 import os
 from dotenv import load_dotenv
 
@@ -60,14 +60,12 @@ class MusicBot(commands.Bot):
                 asyncio.create_task(self.start_playing())  # Reproducción en segundo plano
 
             # Enviar respuesta JSON inmediatamente
-            n = VideosSearch(extract, limit=1)
-            return {"status": "success", "message": "Canción agregada a la cola", "queue": self.music_queue, "info": n.result()}
+            
+            return {"status": "success", "message": "Canción agregada a la cola", "queue": self.music_queue}
 
         except Exception as e:
-            import traceback
             print(f"Error al reproducir música: {e}")
-            error_trace = traceback.format_exc()
-            return {"status": "error", "message": str(e), "track_error": error_trace}
+            return {"status": "error", "message": str(e)}
 
     async def start_playing(self):
         # Maneja la reproducción de música en cola
@@ -109,4 +107,3 @@ class MusicBot(commands.Bot):
         # Inicia el bot
         TOKEN = os.getenv("DISCORD_TOKEN")
         await self.start(TOKEN)
-
