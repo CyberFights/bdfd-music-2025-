@@ -65,7 +65,8 @@ class MusicBot(commands.Bot):
 
         except Exception as e:
             print(f"Error al reproducir música: {e}")
-            return {"status": "error", "message": str(e)}
+            error_trace = traceback.format_exc()
+            return {"status": "error", "message": str(e), "track_error": error_trace}
 
     async def start_playing(self):
         # Maneja la reproducción de música en cola
