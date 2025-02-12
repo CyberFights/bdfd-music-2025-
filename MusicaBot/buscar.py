@@ -10,8 +10,7 @@ def search_youtube(query):
         return f"https://www.youtube.com/watch?v={video_id}"
     return None  # Retorna None si no hay resultados
 
-# Ejemplo de uso:
-print(search("Despacito"))
+
 
 
 
