@@ -19,7 +19,7 @@ En caso de errores de cookies, edit el archivo de [cookies.txt](https://github.c
 - Abre una ventana de incógnito
 - Ve a https://youtube.com/
 - Inicia sesión
-- Cuando estés nuevamente en la página principal de YouTube, luego de iniciar sesión
+- Cuando estés nuevamente en la página principal de YouTube, luego de iniciar sesión, en la esquina estara el icono de la extension dale click
 - Haz clic en "Exportar todas las cookies"
 - Copia el contenido del archivo y pegalo en archivo de cookies en el repositorio
 
