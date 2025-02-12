@@ -10,6 +10,7 @@ En cualquier diploy render, vercelapp o cualquiera establece las variable de ent
 ## ERRORES
 
 **COOKIES**
+
 En caso de errores de cookies, edit el archivo de [cookies.txt](https://github.com/IzanaonYT/bdfd-music-2025-/blob/main/cookies.txt), y seguir el siguiente tutorial.
 
 - Agrega la extensión Get cookies.txt LOCALMENTE
