@@ -1,7 +1,7 @@
 import subprocess
 
 # Ruta del archivo de cookies
-COOKIES_PATH = "cookies.txt"
+COOKIES_PATH = "/app/cookies.txt"
 
 def get_youtube_audio_url(video_url):
     try:
